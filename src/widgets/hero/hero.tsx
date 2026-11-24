@@ -2,6 +2,7 @@
 import { Container } from "@/shared/ui/container";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { publicAsset } from "@/root/constants/assets";
 
 export const Hero = () => {
   return (
@@ -21,7 +22,7 @@ export const Hero = () => {
         <div
           className="w-full h-[80vh] bg-foreground/10 mt-10 max-md:mt-5 bg-center bg-cover"
           style={{
-            backgroundImage: `url('/image/hero.png')`,
+            backgroundImage: `url('${publicAsset("/image/hero.png")}')`,
           }}
         ></div>
       </Container>
